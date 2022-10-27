@@ -219,7 +219,7 @@ def training_step(network, optimizer, images, labels):
 
     return loss, accuracy
 
-def train_epoch(i_epoch, step_in_epoch, train_ds, val_ds, network, optimizer, BATCH_SIZE, checkpoint):
+def train_epoch(i_epoch, step_in_epoch, train_ds, val_ds, network, optimizer, BATCH_SIZE, checkpoint, acc_loss):
     # Here is our training loop!
 
     steps_per_epoch = int(1281167 / BATCH_SIZE)
@@ -234,7 +234,9 @@ def train_epoch(i_epoch, step_in_epoch, train_ds, val_ds, network, optimizer, BA
         loss, acc = training_step(network, optimizer, train_images, train_labels)
         end = time.time()
         images_per_second = BATCH_SIZE / (end - start)
+        acc_loss.append([acc, loss])
         print(f"Finished step {step_in_epoch.numpy()} of {steps_per_epoch} in epoch {i_epoch.numpy()},loss={loss:.3f}, acc={acc:.3f} ({images_per_second:.3f} img/s).")
+        print(acc_loss)
         start = time.time()
 
     # Save the network after every epoch:
@@ -301,7 +303,7 @@ def main():
     #########################################################################
     BATCH_SIZE = 256
     N_EPOCHS = 10
-
+    acc_loss = []
     train_ds, val_ds = prepare_data_loader(BATCH_SIZE)
 
 
@@ -337,7 +339,7 @@ def main():
         checkpoint.restore(latest_checkpoint)
 
     while epoch < N_EPOCHS:
-        train_epoch(epoch, step_in_epoch, train_ds, val_ds, network, optimizer, BATCH_SIZE, checkpoint)
+        train_epoch(epoch, step_in_epoch, train_ds, val_ds, network, optimizer, BATCH_SIZE, checkpoint, acc_loss)
         epoch.assign_add(1)
         step_in_epoch.assign(0)
 
