@@ -1,0 +1,96 @@
+gpu 1
+# This is rank 0 of 1
+epoch - 0, train accuracy - 0.930, test accuracy - 0.983
+epoch - 1, train accuracy - 0.973, test accuracy - 0.980
+epoch - 2, train accuracy - 0.975, test accuracy - 0.988
+epoch - 3, train accuracy - 0.979, test accuracy - 0.985
+epoch - 4, train accuracy - 0.981, test accuracy - 0.989
+epoch - 5, train accuracy - 0.981, test accuracy - 0.989
+epoch - 6, train accuracy - 0.984, test accuracy - 0.988
+epoch - 7, train accuracy - 0.983, test accuracy - 0.988
+epoch - 8, train accuracy - 0.983, test accuracy - 0.990
+epoch - 9, train accuracy - 0.985, test accuracy - 0.989
+epoch - 10, train accuracy - 0.983, test accuracy - 0.989
+epoch - 11, train accuracy - 0.986, test accuracy - 0.989
+epoch - 12, train accuracy - 0.986, test accuracy - 0.990
+epoch - 13, train accuracy - 0.986, test accuracy - 0.991
+epoch - 14, train accuracy - 0.986, test accuracy - 0.990
+epoch - 15, train accuracy - 0.986, test accuracy - 0.990
+Total training time: 29.65838885307312 seconds
+
+gpu 2
+# This is rank 0 of 2
+# This is rank 1 of 2
+epoch - 0, train accuracy - 0.902, test accuracy - 0.975
+epoch - 1, train accuracy - 0.956, test accuracy - 0.984
+epoch - 2, train accuracy - 0.962, test accuracy - 0.982
+epoch - 3, train accuracy - 0.965, test accuracy - 0.983
+epoch - 4, train accuracy - 0.966, test accuracy - 0.983
+epoch - 5, train accuracy - 0.965, test accuracy - 0.985
+epoch - 6, train accuracy - 0.966, test accuracy - 0.984
+epoch - 7, train accuracy - 0.966, test accuracy - 0.984
+epoch - 8, train accuracy - 0.966, test accuracy - 0.984
+epoch - 9, train accuracy - 0.967, test accuracy - 0.984
+epoch - 10, train accuracy - 0.969, test accuracy - 0.986
+epoch - 11, train accuracy - 0.969, test accuracy - 0.984
+epoch - 12, train accuracy - 0.967, test accuracy - 0.985
+epoch - 13, train accuracy - 0.968, test accuracy - 0.985
+epoch - 14, train accuracy - 0.970, test accuracy - 0.985
+epoch - 15, train accuracy - 0.968, test accuracy - 0.985
+Total training time: 48.43753457069397 seconds
+Total training time: 43.750877141952515 seconds
+
+
+gpu 4
+# This is rank 3 of 4
+# This is rank 1 of 4
+# This is rank 0 of 4
+# This is rank 2 of 4
+epoch - 0, train accuracy - 0.620, test accuracy - 0.734
+epoch - 1, train accuracy - 0.702, test accuracy - 0.747
+epoch - 2, train accuracy - 0.708, test accuracy - 0.744
+epoch - 3, train accuracy - 0.711, test accuracy - 0.743
+epoch - 4, train accuracy - 0.712, test accuracy - 0.745
+epoch - 5, train accuracy - 0.712, test accuracy - 0.746
+epoch - 6, train accuracy - 0.716, test accuracy - 0.753
+epoch - 7, train accuracy - 0.716, test accuracy - 0.750
+epoch - 8, train accuracy - 0.714, test accuracy - 0.747
+epoch - 9, train accuracy - 0.717, test accuracy - 0.745
+epoch - 10, train accuracy - 0.718, test accuracy - 0.751
+epoch - 11, train accuracy - 0.716, test accuracy - 0.752
+epoch - 12, train accuracy - 0.717, test accuracy - 0.748
+epoch - 13, train accuracy - 0.718, test accuracy - 0.746
+epoch - 14, train accuracy - 0.716, test accuracy - 0.749
+epoch - 15, train accuracy - 0.718, test accuracy - 0.748
+Total training time: 46.27053928375244 seconds
+Total training time: 46.27448797225952 seconds
+
+gpu8
+# This is rank 3 of 8
+# This is rank 4 of 8
+# This is rank 1 of 8
+# This is rank 6 of 8
+# This is rank 0 of 8
+# This is rank 2 of 8
+# This is rank 5 of 8
+# This is rank 7 of 8
+epoch - 0, train accuracy - 0.108, test accuracy - 0.109
+epoch - 1, train accuracy - 0.108, test accuracy - 0.107
+epoch - 2, train accuracy - 0.106, test accuracy - 0.106
+epoch - 3, train accuracy - 0.106, test accuracy - 0.106
+epoch - 4, train accuracy - 0.107, test accuracy - 0.104
+epoch - 5, train accuracy - 0.106, test accuracy - 0.104
+epoch - 6, train accuracy - 0.106, test accuracy - 0.107
+epoch - 7, train accuracy - 0.106, test accuracy - 0.105
+epoch - 8, train accuracy - 0.107, test accuracy - 0.102
+epoch - 9, train accuracy - 0.106, test accuracy - 0.105
+epoch - 10, train accuracy - 0.106, test accuracy - 0.103
+epoch - 11, train accuracy - 0.106, test accuracy - 0.109
+epoch - 12, train accuracy - 0.106, test accuracy - 0.106
+epoch - 13, train accuracy - 0.106, test accuracy - 0.100
+epoch - 14, train accuracy - 0.106, test accuracy - 0.107
+epoch - 15, train accuracy - 0.106, test accuracy - 0.105
+Total training time: 59.640865325927734 seconds
+Total training time: 59.38281512260437 seconds
+
+
