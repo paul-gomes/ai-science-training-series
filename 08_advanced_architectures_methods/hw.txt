@@ -1,0 +1,6 @@
+I could use AI to build a facial recognition biometric system. In a biometric system, users often first need to submit their templates in the system 
+to register. We would need pictures from different angles for each user to train the model. Templates are stored in the database. We would need to 
+preprocess the images and use some sort of dimensionality reduction algorithm. We could use Convolutional neural networks to process the image. 
+A Similarity function would be used to generate a similarity score during the template validation. If the score is greater than a certain 
+threshold (decided beforehand), then the user is genuine, otherwise imposter. This will fall under supervised training. We would have images 
+with labels. Thus, we can determine the model's success by validating with the real labels.
